@@ -1,0 +1,49 @@
+# Jawaban Soal Nomor 03
+# Nama file: Ega Permana soal 03
+# Nama: Ega Permana
+# Nomor Absen: 4
+# Kelas: CTA 3
+
+# baris di bawah ini Anda mulai membuat memrogram:
+print("============================================")
+print("PROGRAM LIST ANGGOTA SHEILA")
+print("============================================")
+
+sheila=[] # membuat list bernama sheila
+sheila.append("eros") # menambahkan data eros dan duta ke dalam list sheila
+sheila.append("duta")
+print("1. Daftar Anggota Sheila :", sheila)
+for anggota in range(3):
+    sheila.append(input("Ketik anggota lainnya: ")) #menambahkan anggota band lain yang diinput user misal adam, anton dan sakti
+print("2. Daftar Anggota Sheila :", sheila)
+
+sheila.remove('sakti') # menghapus data sakti dan anton
+sheila.remove('anton')
+print("3. Daftar Anggota Sheila :", sheila)
+
+sheila.insert(1,'brian') #menambahkan data brian dengan methode insert
+print("4. Daftar Anggota Sheila :", sheila)
+
+print("5. Daftar Anggota Sheila :")
+while sheila:                         #menampilkan data di list sheila dengan looping while
+    print(sheila.pop(-1))
+
+#Keluaran Program
+"""
+============================================
+PROGRAM LIST ANGGOTA SHEILA
+============================================
+1. Daftar Anggota Sheila : ['eros', 'duta']
+Ketik anggota lainnya: adam
+Ketik anggota lainnya: anton
+Ketik anggota lainnya: sakti
+2. Daftar Anggota Sheila : ['eros', 'duta', 'adam', 'anton', 'sakti']
+3. Daftar Anggota Sheila : ['eros', 'duta', 'adam']
+4. Daftar Anggota Sheila : ['eros', 'brian', 'duta', 'adam']
+5. Daftar Anggota Sheila :
+adam
+duta
+brian
+eros
+
+"""
